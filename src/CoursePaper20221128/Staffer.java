@@ -99,12 +99,12 @@ public class Staffer {
         double salaryChanges = 0;
         for (Employee employee : employeeAccounting) {
             if (employeeAccounting != null) {
+
+                salaryChanges = employee.getSalary() * riceRate;
+                System.out.println(employee.getSuname() + " " + employee.getFirstName() + " " + employee.getPatronymic() + " " + salaryChanges);
             }
-            salaryChanges = employee.getSalary() * riceRate;
-            System.out.println(employee.getSuname() + " " + employee.getFirstName() + " " + employee.getPatronymic() + " " + salaryChanges);
         }
     }
-
 
     }
 
